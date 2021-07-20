@@ -1,0 +1,22 @@
+Variáveis:
+    São espaços na memória que armazenam uma
+    informação específica.
+
+
+Criação de variáveis:
+
+    var nome_da_variavel = valor 
+
+
+Nome de Variáveis tem que seguir as seguintes
+regras:
+
+    1) Pode ter caracteres alfanuméricos
+       [0-9a-zA-Z]
+
+    2) O primeiro caractere NÃO PODE SER UM 
+       NÚMERO
+
+    3) Aceita os caracteres $ e _ (underscore)
+
+
