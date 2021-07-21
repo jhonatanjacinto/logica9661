@@ -1,0 +1,14 @@
+Crie um algoritmo que peça a idade de uma pessoa expressa em anos, meses e dias e escreva a idade dessa pessoa expressa apenas em dias. Considerar ano com 365 dias e mês com 30 dias.
+
+    Ex: Maria tem 29 anos, 7 meses e 15 dias 
+        (Exibir a idade apenas em dias)
+
+
+        Você já viveu X dias.
+
+-------------------------------------------------
+
+var anos = 29
+var meses = 7
+var anosEmDias = anos x 365
+var mesesEmDias = meses x 30

@@ -1,0 +1,17 @@
+Escreva um algoritmo para ler o salário mensal atual de um funcionário e o percentual de reajuste.
+Calcular e exibir o valor do novo salário.
+
+
+Informações necessárias:
+    1) Salário Atual (float)
+    2) Percentual de Reajuste (float)
+
+Passo a passo:
+    1) Coletar o salário 
+    2) Coletar o valor do reajuste (percentual)
+    3) Valor de Reajuste = salario x (percentual / 100)
+    4) Calcular o valor do novo salário 
+    5) Exibir o novo salário na tela no formato abaixo:
+
+
+        Seu salário novo é: R$ xxx.xx

@@ -1,0 +1,20 @@
+Crie um algoritmo para a realização de um cadastro simples de um cliente. Para realizar esse cadastro o usuário deverá informar seu nome, sobrenome, ano de nascimento e e-mail.
+
+Depois de coletar as informações, exiba na tela os dados da seguinte maneira:
+
+
+    Cadastro realizado com sucesso!
+    Suas informações são:
+
+    Nome completo: [NOME_COMPLETO]
+    Idade: X anos 
+    E-mail: [EMAIL_DO_CARA]
+
+    Obrigado!
+
+Dica:
+
+    parseFloat() = números em float (mantendo casas decimais)
+    parseInt() = números inteiros
+
+    

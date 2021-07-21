@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<h1>Cadastro simples de Clientes</h1>
+
+<script>
+
+    var nome = prompt('Informe seu nome:')
+    var sobrenome = prompt('Informe seu sobrenome:')
+    var ano_nascimento = parseInt(prompt('Informe seu ano de nascimento:'))
+    var email = prompt('Informe seu e-mail:')
+    var ano_atual = new Date().getFullYear()
+    var idade = ano_atual - ano_nascimento
+
+    document.write(`
+        Cadastro realizado com sucesso!<br>
+        Suas informações são: <br>
+        <br>
+        Nome completo: ${nome} ${sobrenome}<br>
+        Idade: ${idade} anos <br>
+        E-mail: ${email} <br>
+        <br>
+        Obrigado!
+    `)
+
+</script>
