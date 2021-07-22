@@ -1,0 +1,10 @@
+Escreva um algoritmo para ler o número total de eleitores de um município, o número de votos brancos e nulos. Calcular e escrever o percentual que cada um representa em relação ao total de eleitores.
+
+    Formato:
+        Total de Eleitores: X
+        % de votos brancos: X%
+        % de votos nulos: X%
+        % de votos válidos: X%
+
+    Fórmula:
+        percentual = 100 * votos / total de eleitores

@@ -1,0 +1,14 @@
+Variável: armazena uma informação específica em memória.
+
+Função: serve para armazenar uma lógica inteira em memória para ser executada quando necessário.
+
+    Criação de Funções
+
+        function nomeDaFuncao() 
+        {
+            // código a ser executado pela função
+        }
+
+    Execução de Funções 
+
+        nomeDaFuncao()

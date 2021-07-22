@@ -1,0 +1,37 @@
+Carro:
+    1) distância a ser percorrida
+    2) quantos kms o carro faz por litro (autonomia)
+    3) preço da gasolina
+    4) preço do estacionamento
+
+    Exibir:
+        Preço da Gasolina: R$ X
+        Valor gasto com gasolina: R$ X
+        Preço do Estacionamento: R$ X
+        Total Carro: R$ X
+
+distancia = 50km
+autonomia = 25km/litro 
+gasolina = R$ 2,00
+
+gasto gasolina = distancia / autonomia * gasolina
+
+---------------------------------
+
+Uber:
+    1) Preço base: R$ 2,75
+    2) Velocidade Média: 25 KM/h
+    3) R$ 0,26 por minuto de viagem 
+    4) R$ 1,40 por KM rodado (X)
+
+    Exibir:
+        Total Uber: R$ X
+
+
+distancia = 50km
+vm = 25km/h
+
+Tempo em Horas = 2 horas
+Tempo em Minutos = tempo em horas x 60
+
+gasto tempo viagem = tempo em minutos x 0.26

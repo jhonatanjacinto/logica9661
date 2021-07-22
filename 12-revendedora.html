@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<h1>Revendedora</h1>
+
+<script>
+
+    var salario = parseFloat(prompt('Informe seu salário:').replace(',', '.'))
+    var comissaoPorCarro = parseFloat(prompt('Informe o valor da comissão por carro:').replace(',', '.'))
+    var quantidadeCarros = parseInt(prompt('Informe a quantidade de carros vendida:'))
+    var totalVendas = parseFloat(prompt('Informe o valor total das vendas realizadas:').replace(',', '.'))
+
+    // cálculo das comissões
+    var comissao1 = totalVendas * (5/100)
+    var comissao2 = comissaoPorCarro * quantidadeCarros
+
+    // salário final
+    var salarioFinal = salario + comissao1 + comissao2 
+
+    document.write(`Seu salário novo é: R$ ${salarioFinal.toFixed(2).replace('.', ',')}`)
+
+</script>
