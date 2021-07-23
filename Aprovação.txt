@@ -1,0 +1,3 @@
+Escreva um algoritmo que peça 2 notas de determinado aluno. Calcule a média final e exiba na tela.
+SE a média for MAIOR OU IGUAL a 7 exiba na tela "Você foi aprovado"
+CASO CONTRARIO exiba "Você foi reprovado"
