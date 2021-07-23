@@ -1,0 +1,11 @@
+1) Pedir a idade do usuário assim que ele entrar no site
+2) Com base na idade, verificar qual plano de viagem se encaixa na faixa etária do usuário:
+
+    12-17 anos => Plano Teen
+    18-29 anos => Plano Professional
+    30+ anos => Plano Xperience
+    Demais casos => Não há planos para você!
+
+
+    Else = Caso contrário
+           SEMPRE NEGA O IF IMEDIATAMENTE ANTERIOR
