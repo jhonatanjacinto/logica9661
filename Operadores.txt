@@ -1,0 +1,22 @@
+Operadores de Comparação
+
+    == (igualdade)
+    === (igualdade estrita)
+    != (diferença)
+    !== (diferença estrita)
+    > (maior que)
+    < (menor que)
+    >= (maior ou igual a)
+    <= (menor ou igual a)
+
+    * Todos os operadores de comparação retornam um valor booleano como resultado
+
+    Boolean = true/false
+
+Operadores Lógicos
+
+    && (E)
+    || (Ou)
+    ! (Negação)
+
+    
