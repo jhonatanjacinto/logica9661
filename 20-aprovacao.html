@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+<h1>Média Final</h1>
+
+<p>
+    Preencha o formulário abaixo com as notas do aluno:
+</p>
+
+<p>
+    1ª nota: <br>
+    <input type="number" id="campoNota1">
+</p>
+
+<p>
+    2ª nota: <br>
+    <input type="number" id="campoNota2">
+</p>
+
+<button onclick="calcularMediaAluno()">
+    Calcular Média
+</button>
+
+<script>
+
+    function calcularMediaAluno()
+    {
+        var nota1 = campoNota1.valueAsNumber
+        var nota2 = campoNota2.valueAsNumber
+        var media = (nota1 + nota2) / 2
+
+        document.write(`Sua média final é: ${media.toFixed(1)} <br>`)
+
+        if (media >= 7) {
+            document.write('VOCÊ FOI APROVADO!')
+        }
+        else {
+            document.write('VOCÊ FOI REPROVADO!')
+        }
+    }
+
+</script>

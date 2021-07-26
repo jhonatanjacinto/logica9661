@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<h1>Controle de Estoque - Status</h1>
+
+<p>
+    Preencha o formulário abaixo para checar o status do estoque:
+</p>
+
+<p>
+    Quantidade Atual: <br>
+    <input type="number" id="campoQtdAtual">
+</p>
+
+<p>
+    Quantidade Máxima: <br>
+    <input type="number" id="campoQtdMax">
+</p>
+
+<p>
+    Quantidade Mínima: <br>
+    <input type="number" id="campoQtdMin">
+</p>
+
+<button onclick="verificarEstoque()">
+    Verificar
+</button>
+
+<script>
+
+    function verificarEstoque()
+    {
+        var qtdAtual = campoQtdAtual.valueAsNumber
+        var qtdMax = campoQtdMax.valueAsNumber
+        var qtdMin = campoQtdMin.valueAsNumber 
+        var qtdMedia = (qtdMax + qtdMin) / 2
+        var statusCompra = 'EFETUAR COMPRA'
+
+        if (qtdAtual >= qtdMedia) {
+            statusCompra = 'NÃO EFETUAR COMPRA'
+        }
+
+        document.write(`
+            Quantidade atual: ${qtdAtual} <br>
+            Quantidade média: ${qtdMedia} <br>
+            ${statusCompra}
+        `)
+    }
+
+</script>
