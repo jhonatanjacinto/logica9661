@@ -1,0 +1,10 @@
+Tipos de Dados
+    String = Texto
+    Number = Números (float, integer)
+    Boolean = Booleano (true/false)
+    Array = Listas de Informações (Matriz/Vetor)
+
+
+[] = Colchetes
+99%
+    ColdFusion

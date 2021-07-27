@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<h1>Array</h1>
+
+<!-- UL = Unordered List (Lista não-ordenada) -->
+<!-- OL = Ordered List (Lista Ordenada) -->
+<!-- LI = LIST ITEM (Item da Lista) -->
+
+<script>
+
+    // O índice 0 representa o 1º item do array
+    var listaCompras = ["Arroz", "Feijão", "Batata", "Óleo", "Açúcar", "Café", "Vodka"]
+    alert('O 1º item da lista é: ' + listaCompras[0])
+    alert('O último item da lista é: ' + listaCompras[6])
+
+    document.write(`
+        Sua lista de supermercado tem <b>${listaCompras.length} item(ns)</b>. Eles são: <br>
+        <ol>
+            <li>
+                ${listaCompras.join('</li> <li>')}
+            </li>
+        </ol>
+    `)
+
+</script>
