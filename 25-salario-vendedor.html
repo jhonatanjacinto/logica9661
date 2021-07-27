@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<h1>Salário do Vendedor</h1>
+
+<script src="js/pegaNumero.js"></script>
+<script src="js/formataMoeda.js"></script>
+
+<script>
+
+    var salarioFixo = pegaFloat('Salário Fixo:')
+    var totalVendas = pegaFloat('Valor total das vendas:')
+
+    if (totalVendas <= 1500)
+    {
+        // aplicar 3% sobre as vendas
+        var comissao = totalVendas * 0.03
+        var salarioFinal = comissao + salarioFixo
+    }
+    else 
+    {
+        // 3% sobre 1500
+        var comissao1 = 1500 * 0.03
+        // 5% sobre a diferença
+        var comissao2 = (totalVendas - 1500) * 0.05
+        var salarioFinal = comissao1 + comissao2 + salarioFixo
+    }
+
+    document.write(`Seu salário é: ${formataMoeda(salarioFinal)}`)
+
+</script>
