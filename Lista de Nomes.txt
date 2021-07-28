@@ -1,0 +1,21 @@
+Crie um programa com 2 botões na tela:
+    a) um chamado "Adicionar Nome"
+    b) e o outro chamado "Exibir Lista"
+
+Quando o usuário clicar no botão "Adicionar Nome", usando um prompt peça para o usuário informar um nome para ser adicionado na lista de nomes em memória. Depois de adicionar o nome informado, exiba um alerta com a mensagem "Nome adicionado com sucesso". Caso o usuário não informe nenhum nome, exiba um alerta com a mensagem "Informação inválida!".
+
+Por fim, quando o botão "Exibir Lista" for clicado, exiba a lista de nomes coletados na tela, um embaixo do outro conforme modelo abaixo:
+
+    Os nomes coletados foram:
+        1. Adriana
+        2. Marcela
+        3. Rodrigo
+        4. Ana 
+        5. Pedro
+        ...
+
+OPCIONAL:
+    Se a quantidade de nomes na lista de nomes for 0 (zero), no lugar da mensagem anterior exiba:
+
+        Não há nomes cadastrados para serem exibidos!
+        

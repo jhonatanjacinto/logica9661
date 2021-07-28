@@ -1,0 +1,51 @@
+<meta charset="utf-8">
+<h1>Lista de Nomes</h1>
+
+<button onclick="addNome()">
+    Adicionar Nome
+</button>
+
+<button onclick="exibirNomes()">
+    Exibir Lista
+</button>
+
+<p id="mostradorNomes">
+    Sua lista de nomes será exibida aqui.
+</p>
+
+<script>
+
+    var listaNomes = []
+
+    function addNome()
+    {
+        var nome = prompt('Informe um nome:').trim()
+        if (nome == '') {
+            alert('Informação inválida!')
+        }
+        else {
+            listaNomes.push(nome)
+            alert('Nome adicionado com sucesso!')
+        }
+    }
+
+    function exibirNomes()
+    {
+        if (listaNomes.length == 0) 
+        {
+            mostradorNomes.innerHTML = "Não há nomes cadastrados para serem exibidos!"
+        }
+        else 
+        {
+            mostradorNomes.innerHTML = (`
+                Os nomes coletados foram: <br>
+                <ol>
+                    <li>
+                        ${listaNomes.join('</li> <li>')}
+                    </li>
+                </ol>
+            `)
+        }
+    }
+
+</script>
