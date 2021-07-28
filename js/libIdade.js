@@ -1,6 +1,6 @@
 /* função que deixa o numero informado sempre com 2 dígitos preenchendo com 0 caso necessário. 
    Ex: 17 = 17, 9 = 09 */
-   function numeroComDoisDigitos(numero) {
+function numeroComDoisDigitos(numero) {
     return numero.toString().padStart(2,0);
 }
 
