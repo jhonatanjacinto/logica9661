@@ -8,7 +8,8 @@
 <p>
     Nome do Item: <br>
     <input type="text" id="campoItem">
-    <button>
+
+    <button onclick="adicionarItem()">
         Adicionar
     </button>
 </p>
@@ -17,3 +18,31 @@
     Sua lista de compras está vazia no momento :/
 </p>
 
+<script>
+
+    var lista = []
+
+    function adicionarItem()
+    {
+        // trim() remove os espaços vazios do início e do final de uma string
+        var item = campoItem.value.trim()
+
+        if (item == '') 
+        {
+            alert('Por favor, preencha o campo corretamente!')
+        }
+        else 
+        {
+            lista.push(item)
+            mostradorLista.innerHTML = (`
+                Sua lista de compras no momento tem os seguinte itens: <br>
+                <ol>
+                    <li>
+                        ${lista.join('</li> <li>')}
+                    </li>
+                </ol>
+            `)
+        }
+    }
+
+</script>
