@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<h1>Tabuada</h1>
+
+<p>
+    Número: <br>
+    <input type="number" id="campoNumero">
+
+    <button onclick="calcularTabuada()">
+        Ver Tabuada
+    </button>
+</p>
+
+<p id="mostradorTabuada">
+    Sua tabuada será exibida aqui :)
+</p>
+
+<script>
+
+    function calcularTabuada()
+    {
+        var numero = campoNumero.valueAsNumber
+        var multiplicador = 0
+        mostradorTabuada.innerHTML = ''
+
+        while (multiplicador <= 10)
+        {
+            var resultado = numero * multiplicador
+            mostradorTabuada.innerHTML += `${numero} x ${multiplicador} = ${resultado} <br>`
+            multiplicador = multiplicador + 1
+        }
+    }
+
+</script>
