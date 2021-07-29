@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<h1>Números no Intervalo</h1>
+
+<script src="js/pegaNumero.js"></script>
+<script>
+
+    var estaoNoIntervalo = []
+    var foraDoIntervalo = []
+
+    for (var contador = 1; contador <= 10; contador++)
+    {
+        var numero = pegaInt(`Informe o ${contador}º número:`)
+
+        if (numero >= 10 && numero <= 20) {
+            estaoNoIntervalo.push(numero)
+        }
+        else {
+            foraDoIntervalo.push(numero)
+        }
+    }
+
+    document.write(`
+        Estão entre 10-20: ${estaoNoIntervalo.length} (${estaoNoIntervalo}) <br>
+        Estão fora do intervalo: ${foraDoIntervalo.length} (${foraDoIntervalo})
+    `)
+
+</script>
