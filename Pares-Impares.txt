@@ -8,8 +8,11 @@ Ex:
         Pares = 3
 
     ------------------
+    % = Módulo (resto da divisão)
 
-    SE O RESTO DA DIVISÃO DE UM NÚMERO FOR ZERO
+    SE O RESTO DA DIVISÃO DE UM NÚMERO POR 2 FOR ZERO
         ELE É PAR 
     CASO CONTRÁRIO
         ELE É IMPAR
+
+
