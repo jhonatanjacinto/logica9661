@@ -6,13 +6,15 @@
 
 <script>
 
-    var somaValores = 0
-    var qtdMercadorias = pegaInt('Informe a quantidade de mercadorias:')
+    var qtdMercadorias = 1
+    var valorMercadoria = pegaFloat(`Informe o preço da 1ª mercadoria:`)
+    var somaValores = valorMercadoria
 
-    for (var contador = 1; contador <= qtdMercadorias; contador++)
+    while (prompt('Mais mercadorias? (S/N)') == 'S')
     {
-        var valorMercadoria = pegaFloat(`Informe o preço da ${contador}ª mercadoria:`)
+        valorMercadoria = pegaFloat(`Informe o preço da mercadoria:`)
         somaValores = somaValores + valorMercadoria
+        qtdMercadorias++
     }
 
     var media = somaValores / qtdMercadorias

@@ -1,0 +1,46 @@
+<meta charset="utf-8">
+<h1>Loteria</h1>
+
+<button onclick="jogar()">
+    Jogar
+</button>
+
+<script src="js/pegaNumeroAleatorio.js"></script>
+<script src="js/pegaNumero.js"></script>
+<script src="js/mostra.js"></script>
+<script>
+
+    function jogar()
+    {
+        var listaNumeros = []
+
+        while (listaNumeros.length < 6) 
+        {
+            var numeroSorteado = pegaNumeroAleatorio(1, 60)
+            if (!listaNumeros.includes(numeroSorteado)) {
+                listaNumeros.push(numeroSorteado)
+            }
+        }
+
+        var chute = pegaInt('Informe um chute:')
+
+        while (chute > 60 || chute < 1 || isNaN(chute)) 
+        {
+            chute = pegaInt('Chute inválido! Por favor, informe um número entre 1-60:')
+        }
+
+        if (listaNumeros.includes(chute)) 
+        {
+            mostra(`
+                Parabéns, você acertou! Os números sorteados foram: ${listaNumeros.join(', ')}.
+            `)
+        }
+        else 
+        {
+            mostra(`
+                Que pena, você errou! Os números sorteados foram: ${listaNumeros.join(', ')}.
+            `)
+        }
+    }
+
+</script>
