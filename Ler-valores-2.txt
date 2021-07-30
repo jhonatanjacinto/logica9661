@@ -1,1 +1,2 @@
 Ler 10 valores e escrever a média aritmética dos valores lidos.
+

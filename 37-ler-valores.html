@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<h1>Média dos 10 valores</h1>
+
+<script src="js/pegaNumero.js"></script>
+<script>
+
+    var acumulador = 0
+
+    for (var i = 1; i <= 10; i++)
+    {
+        var numero = pegaInt(`${i}º número:`)
+        acumulador = acumulador + numero 
+    }
+    
+    var media = acumulador / 10
+    document.write(`Média: ${media}`)
+
+</script>

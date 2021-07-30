@@ -16,4 +16,4 @@ Ex:
 
 
         Dica:
-            Será necessário usar o operador +=
+            Você pode usar o operador += se quiser

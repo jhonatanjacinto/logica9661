@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<h1>Estoque / Loja</h1>
+
+<script src="js/pegaNumero.js"></script>
+<script src="js/formataMoeda.js"></script>
+
+<script>
+
+    var somaValores = 0
+    var qtdMercadorias = pegaInt('Informe a quantidade de mercadorias:')
+
+    for (var contador = 1; contador <= qtdMercadorias; contador++)
+    {
+        var valorMercadoria = pegaFloat(`Informe o preço da ${contador}ª mercadoria:`)
+        somaValores = somaValores + valorMercadoria
+    }
+
+    var media = somaValores / qtdMercadorias
+
+    document.write(`
+        Média: ${formataMoeda(media)} <br>
+        Total: ${formataMoeda(somaValores)}
+    `)
+
+</script>
